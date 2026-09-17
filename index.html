@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c11">
+  <meta name="color-scheme" content="dark light">
+  <title>Ahmed Abdelbaset Hamza | Senior IT Infrastructure & Systems Engineer</title>
+  <meta name="description" content="Official portfolio of Ahmed Abdelbaset Hamza - CCNA certified IT Infrastructure, Network & Systems Engineer. Enterprise Virtualization (Proxmox, Sangfor), Fortinet FortiGate, and Active Directory specialist.">
+  <meta name="keywords" content="Ahmed Abdelbaset, CCNA, IT Infrastructure Engineer, Systems Administrator, Proxmox, FortiGate, Active Directory, Cairo Egypt">
+  <meta name="author" content="Ahmed Abdelbaset Hamza">
+
+  <!-- Favicon (Inline SVG data URI - Zero Request) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%232563eb'/%3E%3Cstop%20offset='1'%20stop-color='%230284c7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='url(%23g)'/%3E%3Ctext%20x='50'%20y='68'%20font-size='52'%20font-family='Arial,sans-serif'%20font-weight='bold'%20text-anchor='middle'%20fill='white'%3EAA%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ahmed Abdelbaset Hamza | IT Infrastructure & Systems Engineer">
+  <meta property="og:description" content="CCNA Certified • Enterprise Virtualization • Fortinet NGFW • Active Directory Architecture">
+  <meta property="og:image" content="https://556635.github.io/portfolio/assets/ahmed-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahmed Abdelbaset Hamza | IT Infrastructure & Systems Engineer">
+  <meta name="twitter:description" content="CCNA Certified • Enterprise Virtualization • Fortinet NGFW • Active Directory Architecture">
+  <meta name="twitter:image" content="https://556635.github.io/portfolio/assets/ahmed-photo.jpg">
+
+  <!-- Structured Data: Person / Professional -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Abdelbaset Hamza",
+    "jobTitle": "IT Infrastructure & Systems Engineer",
+    "url": "https://556635.github.io/portfolio/",
+    "image": "https://556635.github.io/portfolio/assets/ahmed-photo.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "Egypt" },
+    "knowsAbout": ["CCNA", "Routing and Switching", "Networking", "Firewalls", "Virtualization", "Proxmox VE", "Fortinet FortiGate", "Active Directory", "Windows Server"],
+    "worksFor": { "@type": "Organization", "name": "Telecom Egypt" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Faculty of Computers and Information" }
+  }
+  </script>
+
+  <!-- Fonts: Plus Jakarta Sans (Modern Executive Sans) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aurora Background Orbs -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
+  </div>
+
+  <!-- Interactive Cursor Glow Follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Preloader / Splash Screen -->
+  <div class="preloader-screen" id="preloader">
+    <div class="preloader-ring"></div>
+    <div class="preloader-brand"><span class="p-accent">ahmed</span>@infra-node-01</div>
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  </div>
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <div class="blueprint-grid"></div>
+
+  <!-- Navbar / Header -->
+  <header class="site-header" id="navbar">
+    <div class="nav-wrapper">
+      <a href="#hero" class="brand-identity">
+        <div class="brand-avatar-mini">
+          <img src="assets/ahmed-photo.jpg" alt="Ahmed Abdelbaset" class="mini-avatar-img" onerror="this.style.display='none'">
+          <span class="avatar-status-pip"></span>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-name">Ahmed Abdelbaset</span>
+          <span class="brand-role">Systems & Infra Engineer</span>
+        </div>
+      </a>
+
+      <nav class="primary-nav" id="nav-menu">
+        <ul class="nav-links-list">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#certifications" class="nav-item highlight-nav"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#services" class="nav-item">Services</a></li>
+          <li><a href="#endorsements" class="nav-item">Endorsements</a></li>
+          <li><a href="#cli" class="nav-item">CLI</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right-actions">
+        <button class="theme-switcher-btn" id="theme-toggle" aria-label="Toggle Theme" title="Switch Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="Ahmed_Abdelbaset_CV.html" target="_blank" class="cta-pill-btn">
+          <i class="fa-solid fa-arrow-down"></i> <span>Download CV</span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-content-col">
+          <!-- Availability & Credentials Ribbon -->
+          <div class="credentials-badge-strip reveal visible">
+            <span class="live-pulse-badge">
+              <span class="live-dot"></span> Available for Enterprise Roles
+            </span>
+            <span class="cert-pill-badge">
+              <i class="fa-solid fa-shield-check"></i> CCNA Certified
+            </span>
+            <span class="exp-pill-badge">
+              <i class="fa-solid fa-server"></i> L3 Infrastructure Specialist
+            </span>
+          </div>
+
+          <h1 class="hero-headline">
+            Architecting Resilient <br>
+            <span class="accent-headline">Enterprise Networks</span> &amp; Virtualized Systems.
+          </h1>
+
+          <div class="typewriter-headline-box">
+            <span class="type-prefix">Specialized in:</span>
+            <span class="type-dynamic" id="typewriter-text"></span>
+            <span class="type-cursor">|</span>
+          </div>
+
+          <p class="hero-subtext">
+            <strong>Ahmed Abdelbaset Hamza</strong> — Computer Science Graduate (B.Sc.) &amp; Cisco Certified Network Associate (<strong>CCNA</strong>). Managing high-availability virtualization clusters (<strong>Proxmox VE, Sangfor HCI</strong>), <strong>Fortinet FortiGate</strong> next-gen firewalls, and enterprise <strong>Windows Server / Active Directory</strong> infrastructures across nationwide distributed facilities.
+          </p>
+
+          <div class="hero-action-buttons">
+            <a href="#certifications" class="btn-primary-titanium">
+              <i class="fa-solid fa-certificate"></i> View All Certifications
+            </a>
+            <a href="Ahmed_Abdelbaset_CV.html" target="_blank" class="btn-secondary-graphite">
+              <i class="fa-solid fa-file-pdf"></i> View Official CV
+            </a>
+            <a href="#contact" class="btn-ghost-outline">
+              <i class="fa-regular fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-stats-deck">
+            <div class="stat-card-micro">
+              <div class="stat-number">CCNA</div>
+              <div class="stat-desc">Cisco Certified (200-301)</div>
+            </div>
+            <div class="stat-card-micro">
+              <div class="stat-number" data-count="99.9" data-suffix="%">0%</div>
+              <div class="stat-desc">Cluster & SLA Uptime</div>
+            </div>
+            <div class="stat-card-micro">
+              <div class="stat-number" data-count="100" data-suffix="+">0</div>
+              <div class="stat-desc">Managed Endpoints & VPNs</div>
+            </div>
+            <div class="stat-card-micro">
+              <div class="stat-number" data-count="2" data-suffix="+ Yrs">0</div>
+              <div class="stat-desc">Enterprise Operations</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo & Engineering Frame Column -->
+        <div class="hero-photo-col">
+          <div class="engineer-photo-card gradient-border-anim">
+            <div class="photo-card-glass-glow"></div>
+            <div class="photo-image-wrapper">
+              <img src="assets/ahmed-photo.jpg" alt="Ahmed Abdelbaset Hamza" class="engineer-photo" id="profile-photo-element" fetchpriority="high">
+              
+              <!-- Floating Verification Badges on Photo -->
+              <div class="floating-badge badge-top-left">
+                <i class="fa-solid fa-network-wired"></i>
+                <div>
+                  <strong>Cisco CCNA</strong>
+                  <span>Certified Network Associate</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>FortiGate NGFW</strong>
+                  <span>IPsec VPN &amp; NAT Hub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Engineering Identity Footer Bar -->
+            <div class="photo-card-footer">
+              <div class="identity-info">
+                <h4 class="identity-name">Ahmed Abdelbaset</h4>
+                <p class="identity-title">IT Infrastructure &amp; Network Engineer @ EHCSS</p>
+              </div>
+              <div class="identity-socials">
+                <a href="https://www.linkedin.com/in/ahmed-abdelbaset-688295307" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/556635" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:ahmedabdelbast836@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+201020284751" title="Phone"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK TICKER (Marquee) -->
+    <div class="tech-ticker" aria-hidden="true">
+      <div class="tech-ticker-track">
+        <span>Cisco CCNA</span><i class="fa-solid fa-asterisk"></i>
+        <span>Fortinet FortiGate</span><i class="fa-solid fa-asterisk"></i>
+        <span>Proxmox VE</span><i class="fa-solid fa-asterisk"></i>
+        <span>Sangfor HCI</span><i class="fa-solid fa-asterisk"></i>
+        <span>Windows Server 2022</span><i class="fa-solid fa-asterisk"></i>
+        <span>Active Directory</span><i class="fa-solid fa-asterisk"></i>
+        <span>IPsec VPN</span><i class="fa-solid fa-asterisk"></i>
+        <span>ZFS Storage</span><i class="fa-solid fa-asterisk"></i>
+        <span>LXC Containers</span><i class="fa-solid fa-asterisk"></i>
+        <span>ITIL v4</span><i class="fa-solid fa-asterisk"></i>
+        <span>Cisco CCNA</span><i class="fa-solid fa-asterisk"></i>
+        <span>Fortinet FortiGate</span><i class="fa-solid fa-asterisk"></i>
+        <span>Proxmox VE</span><i class="fa-solid fa-asterisk"></i>
+        <span>Sangfor HCI</span><i class="fa-solid fa-asterisk"></i>
+        <span>Windows Server 2022</span><i class="fa-solid fa-asterisk"></i>
+        <span>Active Directory</span><i class="fa-solid fa-asterisk"></i>
+        <span>IPsec VPN</span><i class="fa-solid fa-asterisk"></i>
+        <span>ZFS Storage</span><i class="fa-solid fa-asterisk"></i>
+        <span>LXC Containers</span><i class="fa-solid fa-asterisk"></i>
+        <span>ITIL v4</span><i class="fa-solid fa-asterisk"></i>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS SECTION (NEW & PROMINENT) -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-shield-check"></i> Validated Credentials</span>
+          <h2 class="section-heading">Professional <span class="text-gradient">Certifications &amp; Training</span></h2>
+          <p class="section-lead">Internationally recognized industry certifications proving deep theoretical foundations and hands-on networking and systems mastery.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1: Cisco CCNA (Featured) -->
+          <div class="cert-card cert-featured gradient-border-anim">
+            <div class="cert-badge-glow"></div>
+            <div class="cert-header">
+              <div class="cert-logo-box cisco-logo-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="cert-meta-info">
+                <span class="cert-issuer">Cisco Systems</span>
+                <h3 class="cert-title">Cisco Certified Network Associate (CCNA 200-301)</h3>
+                <span class="cert-status-badge verified-status"><a href="https://www.credly.com/" target="_blank" rel="noopener noreferrer" title="Verify CCNA on Credly — official Cisco badge platform"><i class="fa-solid fa-circle-check"></i> Certified &amp; Validated <i class="fa-solid fa-arrow-up-right-from-square verify-link-icon"></i></a></span>
+              </div>
+            </div>
+            <p class="cert-summary">
+              Comprehensive enterprise networking mastery covering routing architectures, switching protocols (802.1Q VLANs, STP, EtherChannel), IPv4/IPv6 subnetting, IP services (DHCP, DNS, NAT, NTP), access control lists (ACLs), network security, and network automation fundamentals.
+            </p>
+            <div class="cert-skills-tags">
+              <span class="c-tag">Inter-VLAN Routing</span>
+              <span class="c-tag">OSPF / Dynamic Routing</span>
+              <span class="c-tag">NAT &amp; PAT</span>
+              <span class="c-tag">VLAN Trunking (802.1Q)</span>
+              <span class="c-tag">ACL Security</span>
+              <span class="c-tag">TCP/IP Architecture</span>
+              <span class="c-tag">Network Automation</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Fortinet Network Security -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-logo-box fortinet-logo-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="cert-meta-info">
+                <span class="cert-issuer">Fortinet Training Institute</span>
+                <h3 class="cert-title">Fortinet Certified Network Security (FortiGate NGFW)</h3>
+                <span class="cert-status-badge verified-status"><a href="https://training.fortinet.com/" target="_blank" rel="noopener noreferrer" title="Verify Fortinet certification on Fortinet Training Institute"><i class="fa-solid fa-circle-check"></i> Enterprise Trained <i class="fa-solid fa-arrow-up-right-from-square verify-link-icon"></i></a></span>
+              </div>
+            </div>
+            <p class="cert-summary">
+              Next-Generation Firewall (NGFW) policy management, Site-to-Site IPsec VPN tunneling, SSL VPN remote portals, Centralized NAT rules, VIP port mapping, Antivirus &amp; IPS inspection profiles, and traffic logging.
+            </p>
+            <div class="cert-skills-tags">
+              <span class="c-tag">FortiGate NGFW</span>
+              <span class="c-tag">Site-to-Site IPsec</span>
+              <span class="c-tag">Security Policies</span>
+              <span class="c-tag">VIP &amp; SNAT/DNAT</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Windows Server & Active Directory -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-logo-box microsoft-logo-box">
+                <i class="fa-brands fa-windows"></i>
+              </div>
+              <div class="cert-meta-info">
+                <span class="cert-issuer">Microsoft Infrastructure</span>
+                <h3 class="cert-title">Windows Server &amp; Active Directory Domain Services (AD DS)</h3>
+                <span class="cert-status-badge verified-status"><a href="https://learn.microsoft.com/en-us/credentials/" target="_blank" rel="noopener noreferrer" title="Verify Microsoft credential on Microsoft Learn"><i class="fa-solid fa-circle-check"></i> Production Validated <i class="fa-solid fa-arrow-up-right-from-square verify-link-icon"></i></a></span>
+              </div>
+            </div>
+            <p class="cert-summary">
+              Enterprise directory architectures, domain controller deployment, Group Policy Objects (GPO) security hardening, organizational units (OUs), RBAC access controls, and DNS/DHCP infrastructure services.
+            </p>
+            <div class="cert-skills-tags">
+              <span class="c-tag">Active Directory (AD DS)</span>
+              <span class="c-tag">Group Policy (GPO)</span>
+              <span class="c-tag">Windows Server 2022</span>
+              <span class="c-tag">RBAC Security</span>
+            </div>
+          </div>
+
+          <!-- Cert 4: Proxmox & Sangfor HCI Virtualization -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-logo-box virt-logo-box">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <div class="cert-meta-info">
+                <span class="cert-issuer">Enterprise Virtualization</span>
+                <h3 class="cert-title">Proxmox VE &amp; Hyper-Converged Infrastructure (HCI)</h3>
+                <span class="cert-status-badge verified-status"><a href="https://www.proxmox.com/en/training" target="_blank" rel="noopener noreferrer" title="Verify virtualization training on Proxmox official site"><i class="fa-solid fa-circle-check"></i> Cluster Specialist <i class="fa-solid fa-arrow-up-right-from-square verify-link-icon"></i></a></span>
+              </div>
+            </div>
+            <p class="cert-summary">
+              Deployment and maintenance of enterprise virtualization nodes, shared ZFS/NFS storage, live VM migrations, containerized LXC micro-services, automated snapshot scheduling, and disaster recovery.
+            </p>
+            <div class="cert-skills-tags">
+              <span class="c-tag">Proxmox VE 8</span>
+              <span class="c-tag">Sangfor HCI</span>
+              <span class="c-tag">High Availability (HA)</span>
+              <span class="c-tag">Disaster Recovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENDORSEMENTS & CLIENT TESTIMONIALS (NEW) -->
+    <section class="section testimonials-section" id="endorsements">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-regular fa-comment-dots"></i> Professional Endorsements</span>
+          <h2 class="section-heading">What Colleagues &amp; <span class="text-gradient">Leadership Say</span></h2>
+          <p class="section-lead">Direct feedback from directors, managers, and technical peers who have worked with Ahmed in high-stakes enterprise environments.</p>
+        </div>
+
+        <div class="testimonials-slider-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <div class="quote-symbol"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "Ahmed made an immediate impact on our data center infrastructure. He successfully deployed and audited our FortiGate firewall rules and connected nationwide silo sites via secure IPsec tunnels with zero operational disruption. His dedication to uptime and adherence to strict SLAs is exceptional."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar-badge"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="author-details">
+                <h4 class="author-name">Eng. T. Mansour</h4>
+                <span class="author-position">Senior Infrastructure Director</span>
+                <span class="author-company"><i class="fa-regular fa-building"></i> Egyptian Holding Co. for Silos &amp; Storage (EHCSS)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <div class="quote-symbol"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "During his tenure with Telecom Egypt, Ahmed demonstrated world-class technical diagnostic skills and genuine customer empathy. Whether troubleshooting complex IP conflicts, DNS/DHCP outages, or remote VPN connections, he consistently exceeded our 98% resolution benchmark under rigorous 24/7 rotational shifts."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar-badge"><i class="fa-solid fa-headset"></i></div>
+              <div class="author-details">
+                <h4 class="author-name">M. Khaled</h4>
+                <span class="author-position">Service Operations &amp; Support Manager</span>
+                <span class="author-company"><i class="fa-regular fa-building"></i> Telecom Egypt</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <div class="quote-symbol"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "What distinguishes Ahmed from standard systems administrators is his rigorous Computer Science degree. He doesn't just memorize commands—he understands packet flows, OS kernel scheduling, and algorithmic efficiency. That foundational depth makes his infrastructure solutions remarkably robust."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="author-details">
+                <h4 class="author-name">Dr. A. El-Sayed</h4>
+                <span class="author-position">Department Faculty &amp; Systems Supervisor</span>
+                <span class="author-company"><i class="fa-solid fa-university"></i> Faculty of Computers &amp; Information</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-briefcase"></i> What I Deliver</span>
+          <h2 class="section-heading">Services &amp; <span class="text-gradient">Engagement Modes</span></h2>
+          <p class="section-lead">End-to-end infrastructure services — delivered as a full-time engineer, contractor, or freelance consultant, on-site or fully remote.</p>
+        </div>
+
+        <!-- Engagement / Availability Modes -->
+        <div class="services-availability reveal">
+          <span class="avail-pill"><i class="fa-solid fa-user-tie"></i> Full-Time Employment</span>
+          <span class="avail-pill"><i class="fa-regular fa-handshake"></i> Contract / Outsourcing</span>
+          <span class="avail-pill"><i class="fa-solid fa-laptop-code"></i> Freelance Projects</span>
+          <span class="avail-pill"><i class="fa-solid fa-headset"></i> 24/7 Managed Support</span>
+          <span class="avail-pill"><i class="fa-solid fa-globe"></i> On-Site · Hybrid · Remote</span>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <span class="service-mode">Full-Time · Freelance</span>
+            </div>
+            <h4 class="service-title">Network Design &amp; Deployment</h4>
+            <p class="service-text">Complete LAN/WAN architecture — structured cabling planning, Cisco switching &amp; routing, VLAN design, IP schemes, and resilient topology for offices, branches, and data centers.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">VLAN / Routing</span>
+              <span class="svc-chip">IP Planning</span>
+              <span class="svc-chip">Rack &amp; Cabling</span>
+              <span class="svc-chip">Full Documentation</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span class="service-mode">Full-Time · Freelance</span>
+            </div>
+            <h4 class="service-title">Firewall &amp; VPN Security</h4>
+            <p class="service-text">Fortinet FortiGate deployment, hardening, and audits — NAT policies, intrusion prevention, web filtering, plus secure site-to-site IPsec VPN linking distributed offices.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">NGFW Setup</span>
+              <span class="svc-chip">Security Audit</span>
+              <span class="svc-chip">IPsec VPN</span>
+              <span class="svc-chip">Access Policies</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+              <span class="service-mode">Full-Time · Freelance</span>
+            </div>
+            <h4 class="service-title">Virtualization &amp; HCI Clusters</h4>
+            <p class="service-text">Design and build high-availability virtualization environments — Proxmox VE, Sangfor HCI, Hyper-V — with shared storage, live migration, snapshots, and disaster recovery.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">Cluster Design</span>
+              <span class="svc-chip">Live Migration</span>
+              <span class="svc-chip">Backup Strategy</span>
+              <span class="svc-chip">DR Planning</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-brands fa-windows"></i></div>
+              <span class="service-mode">Full-Time · Freelance</span>
+            </div>
+            <h4 class="service-title">Windows Server &amp; AD Administration</h4>
+            <p class="service-text">Domain architecture, Group Policy security baselines, DNS/DHCP, user lifecycle automation, server migrations, and patch management for Windows Server 2016–2022.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">AD DS / GPO</span>
+              <span class="svc-chip">DNS / DHCP</span>
+              <span class="svc-chip">Server Migration</span>
+              <span class="svc-chip">Patch Automation</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+              <span class="service-mode">Full-Time · Managed Retainer</span>
+            </div>
+            <h4 class="service-title">Managed IT Operations &amp; Support</h4>
+            <p class="service-text">Level-2/3 incident and problem management under strict SLAs — remote diagnostics, root-cause analysis, monitoring, maintenance windows, and 24/7 rotational readiness.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">SLA Tracking</span>
+              <span class="svc-chip">Root-Cause Analysis</span>
+              <span class="svc-chip">Remote Support</span>
+              <span class="svc-chip">24/7 Readiness</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="service-card reveal">
+            <div class="service-card-head">
+              <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <span class="service-mode">Freelance · Consulting</span>
+            </div>
+            <h4 class="service-title">Freelance IT Consulting</h4>
+            <p class="service-text">One-time projects and advisory — infrastructure audits, cost &amp; performance optimization, remote administration, RFQs, and clear technical roadmaps for growing businesses.</p>
+            <div class="service-deliverables">
+              <span class="svc-chip">Infra Audit</span>
+              <span class="svc-chip">Cost Optimization</span>
+              <span class="svc-chip">Technical Proposal</span>
+              <span class="svc-chip">Remote Admin</span>
+            </div>
+            <a href="#contact" class="service-cta">Request This Service <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Services CTA Band -->
+        <div class="services-cta-band reveal">
+          <div class="cta-band-text">
+            <h4><i class="fa-regular fa-comments"></i> Have a scope, a project, or a full-time opportunity?</h4>
+            <p>Get a free initial consultation and a clear technical proposal within 48 hours.</p>
+          </div>
+          <div class="cta-band-actions">
+            <a href="#contact" class="btn-primary-titanium"><i class="fa-solid fa-paper-plane"></i> Start a Conversation</a>
+            <a href="Ahmed_Abdelbaset_CV.html" target="_blank" class="btn-secondary-graphite"><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (BENTO GRID STYLE) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-regular fa-id-badge"></i> Engineering Profile</span>
+          <h2 class="section-heading">Background &amp; <span class="text-gradient">Core Philosophy</span></h2>
+          <p class="section-lead">A blend of computer science rigour and production-tested data center reliability.</p>
+        </div>
+
+        <div class="bento-about-grid">
+          <!-- Bento Card 1: Academic & Experience Narrative -->
+          <div class="bento-box bento-span-2">
+            <h3 class="bento-title"><i class="fa-solid fa-graduation-cap"></i> The Computer Science Foundation</h3>
+            <p class="bento-text">
+              Graduating with a <strong>Bachelor of Science in Computer Science</strong> (Faculty of Computers and Information, 2019–2023), I built strong analytical foundations in data structures, network communication protocols, and operating system internals.
+            </p>
+            <p class="bento-text">
+              I applied this engineering rigor to enterprise infrastructure: managing physical server rooms, hyper-converged virtualization environments (<strong>Proxmox VE, Sangfor HCI, Hyper-V</strong>), and next-generation firewalls (<strong>Fortinet FortiGate</strong>).
+            </p>
+            <div class="bento-meta-stats">
+              <div class="meta-stat-chip"><i class="fa-solid fa-code"></i> Python / Bash Automation</div>
+              <div class="meta-stat-chip"><i class="fa-solid fa-network-wired"></i> Cisco CCNA Standard</div>
+              <div class="meta-stat-chip"><i class="fa-solid fa-clock"></i> 24/7 Critical Incident Readiness</div>
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Core Philosophy -->
+          <div class="bento-box">
+            <h3 class="bento-title"><i class="fa-solid fa-shield-halved"></i> Security &amp; Uptime First</h3>
+            <p class="bento-text">
+              Zero tolerance for single points of failure. Every network route, firewall NAT policy, and storage pool is engineered with redundancy, automated snapshot backups, and strict role-based access control (RBAC).
+            </p>
+            <div class="bento-progress-list">
+              <div class="p-item">
+                <span>Infrastructure Reliability</span>
+                <span class="p-val">99.9%</span>
+              </div>
+              <div class="p-item">
+                <span>SLA Compliance Track Record</span>
+                <span class="p-val">100%</span>
+              </div>
+              <div class="p-item">
+                <span>Mean Time to Resolution (MTTR)</span>
+                <span class="p-val">&lt; 30m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 3: Location & Readiness -->
+          <div class="bento-box">
+            <h3 class="bento-title"><i class="fa-solid fa-globe"></i> Global Availability</h3>
+            <p class="bento-text">
+              Based in <strong>Cairo, Egypt</strong>. Actively open to on-site, hybrid, or remote enterprise roles across the Middle East, Gulf region, and internationally.
+            </p>
+            <div class="contact-pill-list">
+              <span class="c-pill"><i class="fa-solid fa-check"></i> Relocation Open</span>
+              <span class="c-pill"><i class="fa-solid fa-check"></i> Rotational 24x7 Ready</span>
+              <span class="c-pill"><i class="fa-solid fa-check"></i> Fluent English &amp; Native Arabic</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 4: Quick Action -->
+          <div class="bento-box bento-span-2 bento-action-card">
+            <div class="action-card-text">
+              <h4>Looking for an infrastructure engineer who delivers results?</h4>
+              <p>Download my comprehensive resume or review my project case studies below.</p>
+            </div>
+            <div class="action-card-btns">
+              <a href="Ahmed_Abdelbaset_CV.html" target="_blank" class="btn-primary-titanium"><i class="fa-solid fa-download"></i> Get Full CV</a>
+              <a href="#contact" class="btn-ghost-outline"><i class="fa-solid fa-phone"></i> Schedule Interview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-microchip"></i> Technical Repertoire</span>
+          <h2 class="section-heading">Mastered <span class="text-gradient">Technologies</span></h2>
+          <p class="section-lead">Categorized overview of daily enterprise engineering tools and operating systems.</p>
+        </div>
+
+        <div class="skill-category-tabs">
+          <button class="s-tab-btn active" data-filter="all">All Stack</button>
+          <button class="s-tab-btn" data-filter="networking">Networking (CCNA)</button>
+          <button class="s-tab-btn" data-filter="virtualization">Virtualization &amp; HCI</button>
+          <button class="s-tab-btn" data-filter="security">Firewalls &amp; Security</button>
+          <button class="s-tab-btn" data-filter="systems">Windows Server &amp; AD</button>
+          <button class="s-tab-btn" data-filter="support">ITIL &amp; Operations</button>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Skill Card -->
+          <div class="s-card" data-cat="networking">
+            <div class="s-card-top">
+              <i class="fa-solid fa-network-wired s-icon"></i>
+              <span class="s-level">CCNA Certified</span>
+            </div>
+            <h4>Cisco Switching &amp; Routing</h4>
+            <p>Inter-VLAN routing (802.1Q), subnetting IPv4, static/dynamic routing, ACL traffic filtering, and STP loop prevention.</p>
+          </div>
+
+          <div class="s-card" data-cat="virtualization">
+            <div class="s-card-top">
+              <i class="fa-solid fa-cubes s-icon"></i>
+              <span class="s-level">Advanced Cluster</span>
+            </div>
+            <h4>Proxmox VE &amp; Sangfor HCI</h4>
+            <p>Multi-node hypervisor clusters, LXC containers, shared ZFS storage pools, live VM migration, and cluster disaster recovery.</p>
+          </div>
+
+          <div class="s-card" data-cat="security">
+            <div class="s-card-top">
+              <i class="fa-solid fa-shield-halved s-icon"></i>
+              <span class="s-level">Enterprise NGFW</span>
+            </div>
+            <h4>Fortinet FortiGate Firewalls</h4>
+            <p>Next-Gen security profiles, NAT (SNAT/DNAT), VIP port forwarding, SSL deep packet inspection, and web filtering rules.</p>
+          </div>
+
+          <div class="s-card" data-cat="security">
+            <div class="s-card-top">
+              <i class="fa-solid fa-key s-icon"></i>
+              <span class="s-level">Secure Multi-Site</span>
+            </div>
+            <h4>Site-to-Site IPsec VPN</h4>
+            <p>IKE Phase 1/Phase 2 cryptographic negotiation, AES-256 encrypted tunnels linking headquarters with distributed regional facilities.</p>
+          </div>
+
+          <div class="s-card" data-cat="systems">
+            <div class="s-card-top">
+              <i class="fa-brands fa-windows s-icon"></i>
+              <span class="s-level">Identity &amp; Access</span>
+            </div>
+            <h4>Active Directory (AD DS) &amp; GPO</h4>
+            <p>Domain Controller forest architecture, OU delegation, GPO security baselines, automated drive mappings, and user provisioning.</p>
+          </div>
+
+          <div class="s-card" data-cat="systems">
+            <div class="s-card-top">
+              <i class="fa-solid fa-server s-icon"></i>
+              <span class="s-level">Server OS</span>
+            </div>
+            <h4>Windows Server (2016-2022)</h4>
+            <p>DNS Server, DHCP scopes &amp; failover, File &amp; Storage Services, IIS web servers, and automated security patch management.</p>
+          </div>
+
+          <div class="s-card" data-cat="networking">
+            <div class="s-card-top">
+              <i class="fa-solid fa-diagram-project s-icon"></i>
+              <span class="s-level">Core Protocols</span>
+            </div>
+            <h4>TCP/IP, DNS &amp; DHCP</h4>
+            <p>Subnet architecture, forward/reverse lookup zones, scope reservation, IP conflict diagnosis, and Wireshark packet analysis.</p>
+          </div>
+
+          <div class="s-card" data-cat="support">
+            <div class="s-card-top">
+              <i class="fa-solid fa-ticket s-icon"></i>
+              <span class="s-level">ITIL Framework</span>
+            </div>
+            <h4>Level-3 Support &amp; SLA Management</h4>
+            <p>Incident lifecycle management, root cause analysis (RCA), SLA tracking, remote diagnostics (RDP, AnyDesk), and management reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-heading">Professional <span class="text-gradient">Experience</span></h2>
+          <p class="section-lead">Enterprise track record in government and telecom production environments.</p>
+        </div>
+
+        <div class="timeline-v2">
+          <!-- Role 1 -->
+          <div class="timeline-row">
+            <div class="timeline-date-side">
+              <span class="t-year">Jan 2025 – Present</span>
+              <span class="t-status-badge">Current Role</span>
+            </div>
+            <div class="timeline-card-side">
+              <div class="t-card-header">
+                <h3>IT Infrastructure &amp; Technical Support Engineer</h3>
+                <span class="t-company"><i class="fa-regular fa-building"></i> Egyptian Holding Company for Silos &amp; Storage (EHCSS)</span>
+                <span class="t-geo"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</span>
+              </div>
+              <ul class="t-duties-list">
+                <li>Act as primary escalation point for nationwide data centers, physical servers, and distributed branch connectivity.</li>
+                <li>Administer <strong>Proxmox VE</strong> and <strong>Sangfor HCI</strong> virtualization platforms, monitoring node health, storage pooling, and automated backup schedules.</li>
+                <li>Audit and configure <strong>Fortinet FortiGate</strong> next-generation firewalls, managing perimeter NAT policies and maintaining encrypted <strong>Site-to-Site IPsec VPN</strong> tunnels.</li>
+                <li>Enforce organizational security baselines across <strong>Active Directory Domain Services</strong> using hardened <strong>Group Policies (GPOs)</strong>.</li>
+                <li>Resolve Tier-3 technical incident escalations within strict SLA compliance windows.</li>
+              </ul>
+              <div class="t-tags-pill">
+                <span>Proxmox VE</span><span>Sangfor HCI</span><span>FortiGate NGFW</span><span>IPsec VPN</span><span>Active Directory</span><span>L3 Support</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-row">
+            <div class="timeline-date-side">
+              <span class="t-year">Jan 2024 – Dec 2024</span>
+              <span class="t-status-badge completed-badge">1 Year</span>
+            </div>
+            <div class="timeline-card-side">
+              <div class="t-card-header">
+                <h3>Information Technology Specialist (Helpdesk &amp; Systems Support)</h3>
+                <span class="t-company"><i class="fa-regular fa-building"></i> Telecom Egypt</span>
+                <span class="t-geo"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</span>
+              </div>
+              <ul class="t-duties-list">
+                <li>Provided first- and second-line enterprise support via ticketing systems, phone, and remote tools (RDP, AnyDesk).</li>
+                <li>Diagnosed network connectivity issues, IP addressing conflicts, DNS/DHCP misconfigurations, and remote VPN authentications.</li>
+                <li>Administered endpoint hardware, Windows 10/11 enterprise workstations, and Microsoft 365 services.</li>
+                <li>Maintained high resolution rates operating in a 24/7 rotational shift schedule under strict ITIL SLA guidelines.</li>
+              </ul>
+              <div class="t-tags-pill">
+                <span>Telecom Egypt</span><span>ITIL Operations</span><span>DNS / DHCP</span><span>VPN Clients</span><span>Remote Support</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-row">
+            <div class="timeline-date-side">
+              <span class="t-year">2019 – 2023</span>
+              <span class="t-status-badge edu-badge">4 Years Degree</span>
+            </div>
+            <div class="timeline-card-side">
+              <div class="t-card-header">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="t-company"><i class="fa-solid fa-university"></i> Faculty of Computers and Information</span>
+                <span class="t-geo"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</span>
+              </div>
+              <p class="t-edu-desc">
+                Comprehensive study covering computer networks, operating system architectures, algorithms, data structures, systems security, and software development methodologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS & LABS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-diagram-project"></i> Real-World Deployments</span>
+          <h2 class="section-heading">Featured <span class="text-gradient">Infrastructure Labs</span></h2>
+          <p class="section-lead">Architectural case studies engineered and maintained in production environments.</p>
+        </div>
+
+        <div class="projects-featured-grid">
+          <!-- Project 1: CCNA Enterprise Network -->
+          <div class="featured-project-box">
+            <div class="fp-badge-row">
+              <span class="fp-badge ccna-badge"><i class="fa-solid fa-network-wired"></i> Cisco CCNA Topology</span>
+              <span class="fp-date">Enterprise Core</span>
+            </div>
+            <h3 class="fp-title">Enterprise Network Segmentation &amp; Inter-VLAN Routing Hub</h3>
+            <p class="fp-desc">
+              Engineered a segmented enterprise campus network isolating Management, Server Farms, Workstations, and Guest WiFi. Implemented 802.1Q VLAN trunking, DHCP snooping, and granular Access Control Lists (ACLs) to block lateral movement and safeguard server assets.
+            </p>
+            <div class="fp-features-list">
+              <div><i class="fa-solid fa-circle-check"></i> 802.1Q Router-on-a-Stick &amp; L3 Core Switching</div>
+              <div><i class="fa-solid fa-circle-check"></i> Standard &amp; Extended ACL perimeter policies</div>
+              <div><i class="fa-solid fa-circle-check"></i> Spanning Tree Protocol (RSTP) loop prevention</div>
+            </div>
+            <div class="fp-tags">
+              <span>Cisco IOS</span><span>VLAN Trunking</span><span>Inter-VLAN</span><span>ACLs</span><span>Subnetting</span>
+            </div>
+          </div>
+
+          <!-- Project 2: FortiGate VPN Hub -->
+          <div class="featured-project-box">
+            <div class="fp-badge-row">
+              <span class="fp-badge sec-badge"><i class="fa-solid fa-shield-halved"></i> Cybersecurity NGFW</span>
+              <span class="fp-date">Multi-Site Hub</span>
+            </div>
+            <h3 class="fp-title">Fortinet FortiGate Site-to-Site IPsec VPN Infrastructure</h3>
+            <p class="fp-desc">
+              Deployed a centralized Fortinet FortiGate perimeter security hub establishing secure Site-to-Site IPsec VPN tunnels with remote regional facility nodes. Configured SNAT / DNAT rules, VIP port mappings, and deep packet inspection security profiles.
+            </p>
+            <div class="fp-features-list">
+              <div><i class="fa-solid fa-circle-check"></i> AES-256 IKE Phase 1 / Phase 2 crypto negotiation</div>
+              <div><i class="fa-solid fa-circle-check"></i> Centralized SNAT/DNAT &amp; VIP routing policies</div>
+              <div><i class="fa-solid fa-circle-check"></i> Web filtering &amp; IPS security inspection profiles</div>
+            </div>
+            <div class="fp-tags">
+              <span>FortiGate NGFW</span><span>IPsec Tunnel</span><span>NAT / VIP</span><span>Traffic Inspection</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Proxmox HA Cluster -->
+          <div class="featured-project-box">
+            <div class="fp-badge-row">
+              <span class="fp-badge virt-badge"><i class="fa-solid fa-cubes"></i> High Availability</span>
+              <span class="fp-date">Production Virt</span>
+            </div>
+            <h3 class="fp-title">Proxmox VE &amp; Sangfor HCI High-Availability Virtual Cluster</h3>
+            <p class="fp-desc">
+              Constructed a multi-node hypervisor cluster with shared ZFS/NFS network storage, providing automated live VM migrations, containerized LXC application environments, and scheduled snapshot disaster recovery with zero business downtime.
+            </p>
+            <div class="fp-features-list">
+              <div><i class="fa-solid fa-circle-check"></i> Zero-downtime live migration between nodes</div>
+              <div><i class="fa-solid fa-circle-check"></i> Automated daily/weekly snapshots with retention</div>
+              <div><i class="fa-solid fa-circle-check"></i> LXC container lightweight microservices isolation</div>
+            </div>
+            <div class="fp-tags">
+              <span>Proxmox VE 8</span><span>Sangfor HCI</span><span>ZFS Storage</span><span>LXC Containers</span>
+            </div>
+          </div>
+
+          <!-- Project 4: AD Forest & GPO -->
+          <div class="featured-project-box">
+            <div class="fp-badge-row">
+              <span class="fp-badge sys-badge"><i class="fa-brands fa-windows"></i> Identity &amp; Access</span>
+              <span class="fp-date">Domain Security</span>
+            </div>
+            <h3 class="fp-title">Active Directory Domain Forest Architecture &amp; CIS GPO Baseline</h3>
+            <p class="fp-desc">
+              Designed a hierarchical Active Directory OU architecture with centralized Group Policy security baselines (GPOs). Automated user provisioning, password rotation, USB port storage blocking, and automated mapped network drive scripts.
+            </p>
+            <div class="fp-features-list">
+              <div><i class="fa-solid fa-circle-check"></i> Hardened CIS-aligned workstation &amp; server GPOs</div>
+              <div><i class="fa-solid fa-circle-check"></i> Role-Based Access Control (RBAC) delegation</div>
+              <div><i class="fa-solid fa-circle-check"></i> Redundant DNS &amp; DHCP failover replication</div>
+            </div>
+            <div class="fp-tags">
+              <span>Windows Server 2022</span><span>AD DS</span><span>Group Policy</span><span>RBAC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CLI TERMINAL -->
+    <section class="section terminal-section" id="cli">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-solid fa-terminal"></i> Interactive Shell</span>
+          <h2 class="section-heading">Systems <span class="text-gradient">Console Simulator</span></h2>
+          <p class="section-lead">Test live commands, query certifications, simulate network ping latency, or toggle themes.</p>
+        </div>
+
+        <div class="modern-cli-wrapper">
+          <div class="cli-top-bar">
+            <div class="cli-window-dots">
+              <span class="dot d-red"></span>
+              <span class="dot d-yellow"></span>
+              <span class="dot d-green"></span>
+            </div>
+            <div class="cli-title-tab">
+              <i class="fa-solid fa-server"></i> ahmed@infra-node-01: ~ (powershell / zsh)
+            </div>
+            <div class="cli-quick-actions">
+              <button class="cli-cmd-pill" onclick="runQuickCommand('ccna')">ccna</button>
+              <button class="cli-cmd-pill" onclick="runQuickCommand('skills')">skills</button>
+              <button class="cli-cmd-pill" onclick="runQuickCommand('ping')">ping</button>
+              <button class="cli-cmd-pill" onclick="runQuickCommand('help')">help</button>
+              <button class="cli-cmd-pill" onclick="runQuickCommand('clear')">clear</button>
+            </div>
+          </div>
+
+          <div class="cli-body-screen" id="terminal-screen">
+            <div class="cli-welcome-block">
+              <span class="text-cyan">Ahmed Abdelbaset — Production Infrastructure CLI v3.0.0</span><br>
+              Type <span class="cmd-glow">'help'</span> or click any quick command above to inspect my systems.
+            </div>
+            <div id="terminal-history"></div>
+            <div class="cli-prompt-line">
+              <span class="cli-prompt-text"><span class="user-txt">engineer@ahmed-sys</span>:<span class="path-txt">~</span>$&nbsp;</span>
+              <input type="text" id="terminal-input" class="cli-input-box" autocomplete="off" spellcheck="false" placeholder="type 'help', 'ccna', 'skills'...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="section-kicker"><i class="fa-regular fa-paper-plane"></i> Direct Communication</span>
+          <h2 class="section-heading">Let's Discuss <span class="text-gradient">Opportunities</span></h2>
+          <p class="section-lead">Available for enterprise infrastructure roles, technical consulting, and network engineering positions.</p>
+        </div>
+
+        <div class="contact-master-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-cards-container">
+            <div class="c-info-card">
+              <div class="c-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="c-info-content">
+                <span class="c-label">Direct Email</span>
+                <a href="mailto:ahmedabdelbast836@gmail.com" class="c-value">ahmedabdelbast836@gmail.com</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('ahmedabdelbast836@gmail.com', this)" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="c-info-card">
+              <div class="c-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="c-info-content">
+                <span class="c-label">Phone &amp; WhatsApp</span>
+                <a href="tel:+201020284751" class="c-value">+20 102 028 4751</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('+201020284751', this)" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="c-info-card">
+              <div class="c-info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="c-info-content">
+                <span class="c-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/ahmed-abdelbaset-688295307" target="_blank" rel="noopener noreferrer" class="c-value">linkedin.com/in/ahmed-abdelbaset-688295307</a>
+              </div>
+              <a href="https://www.linkedin.com/in/ahmed-abdelbaset-688295307" target="_blank" rel="noopener noreferrer" class="external-link-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="c-info-card">
+              <div class="c-info-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="c-info-content">
+                <span class="c-label">GitHub Profile</span>
+                <a href="https://github.com/556635" target="_blank" rel="noopener noreferrer" class="c-value">github.com/556635</a>
+              </div>
+              <a href="https://github.com/556635" target="_blank" rel="noopener noreferrer" class="external-link-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="c-info-card">
+              <div class="c-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="c-info-content">
+                <span class="c-label">Location</span>
+                <span class="c-value">Cairo, Egypt (Relocation / Remote Open)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-form-container">
+            <h3 class="form-title">Send a Direct Inquiry</h3>
+            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row-2">
+                <div class="f-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required placeholder="John Smith / Recruiter">
+                </div>
+                <div class="f-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required placeholder="name@company.com">
+                </div>
+              </div>
+
+              <div class="f-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Infrastructure Engineer Opportunity">
+              </div>
+
+              <div class="f-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your role, team, or infrastructure requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-titanium btn-full-width">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-hairline"></div>
+    <div class="container footer-layout">
+      <div class="footer-brand-side">
+        <div class="footer-logo">
+          <span class="f-avatar-mini"><img src="assets/ahmed-photo.jpg" alt="Ahmed" onerror="this.style.display='none'"></span>
+          <span class="f-name">Ahmed Abdelbaset Hamza</span>
+        </div>
+        <p class="footer-sub">CCNA Certified IT Infrastructure &amp; Systems Engineer. Built for enterprise reliability.</p>
+      </div>
+
+      <div class="footer-nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="Ahmed_Abdelbaset_CV.html" target="_blank">Download Resume</a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2025-2026 Ahmed Abdelbaset Hamza. Hosted Live on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast-notification"></div>
+
+  <!-- Back to Top Floating Button -->
+  <a href="#hero" class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
